@@ -1,0 +1,229 @@
+/* CSS Document */
+/*header*/
+header{
+    overflow: hidden;
+    position: relative;
+}
+header .menubar{
+    width: 100%;
+    position: fixed;
+    z-index:50;
+    height: 50px;
+    top: 0;
+    left: 0;
+}
+
+header .main_logo{
+    float: left;
+    height: 50px;
+    font-size: 30px;
+    letter-spacing: -3px;
+    padding: 5px 0 0 5px;
+}
+header .main_logo a{
+    display: block;
+    color: #006837;
+    
+}
+header #btn1{
+    display: block;
+    width: 50px;
+    height: 50px;
+    float: right;
+}
+
+
+
+
+
+
+
+/*메인 이미지 영역*/
+header .swiper-slide img{
+    width: 100%;
+    border: none;
+}
+header .swiper-container {
+        width: 100%;
+    }
+
+header .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+
+    /* Center slide text vertically */
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+
+
+
+header .fa-bars{
+    float: right;
+    font-size: 50px;
+    padding: 5px 10px 0 0;
+    color: #006837;
+}
+#nav{
+    width: 90%;
+    display: none;
+    background: #fff;
+    height: 380px;
+    position: absolute;
+    top: 120%;
+    left: 5%;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 30;
+    font-weight: bold;
+}
+
+#nav nav .main_menu{
+    font-size: 20px;
+}
+#nav nav .main_menu .mm{
+    padding: 25px 0 0 0;
+}
+#nav nav .main_menu .sns ul{
+    text-align: center;
+}
+#nav nav .main_menu .sns li{
+    float: center;
+    display: inline-block;
+    margin: 20px 20px 0 20px;
+}
+#nav nav .main_menu .sns li a{
+    display: block;
+    width: 40px;
+    height: 40px;
+}
+header .fa{
+    font-size: 40px;
+}
+#nav nav .mclose{
+    text-align: center;
+    position:absolute; 
+    bottom: -50px;
+    left: 50%;
+    margin-left: -20px;
+    color: #fff;
+    font-size:2em; 
+}
+
+/*아티클*/
+article{
+    background: url(../images/back.png) center bottom no-repeat;
+    padding-top: 75px;
+}
+article .main_content{
+    overflow: hidden;
+}
+article .main_content .badfarmers .em{
+    width: 60%;
+    margin-left: 40%;
+    height: 300px;
+    background: #fff;
+}
+article .badfarmers{
+    float: left;
+    margin-bottom: 100px;
+}
+article h2{
+    font-size: 24px;
+    margin-bottom: 30px;
+    margin: 0 15px;
+    
+}
+article img{
+    width: 70%;
+    margin-bottom: 30px;
+}
+article p{
+    width: 90%;
+    margin-bottom: 100px;
+    margin: 0 15px;
+}
+article .menu{
+    float: right;
+    text-align: right;
+    margin-bottom: 100px;
+}
+article .menu img{
+    width: 70%;
+}
+article .menu p{
+    text-align: right;
+    float: right;
+    width: 90%;
+}
+article .magazine{
+    float: left;
+    margin-bottom: 150px;
+}
+article .magazine img{
+    width: 70%;
+}
+article .magazine dl{
+    width: 90%;
+    margin-left: 15px;
+}
+
+/*공지사항*/
+article .note{
+    height: 50px;
+    background: #006837;
+    margin-top: 10px;
+}
+.note .notice_con{
+    height:30px; 
+    margin:0 15px;
+    line-height:1em;
+    border-radius:7px; 
+    position:relative; 
+    top:10px; background:#fff;
+}
+section .notice_con h3{
+    font-size:13px; 
+    font-weight:bold; 
+    color:#5c5c5c;
+    padding: 8px 6%;
+}
+article .notice_con .slide_box{
+    width: 67%;
+    height: 13px;
+    overflow: hidden;
+    position:absolute; 
+    left:30%; 
+    top:7px;
+}
+.notice_con .slide_box .slide{
+    position: absolute;
+}
+.notice_con .slide ul{
+    font-size: 12px;
+}
+.notice_con .slide ul li{
+    height:13px; 
+    overflow:hidden; 
+    text-overflow:clip; 
+    -o-text-overflow:clip; 
+    margin-bottom:5px;
+}
+
+/*waypoint*/
+   .wp1, .wp2, .wp3, .wp4, .wp5, .wp6 { visibility: hidden;}
+   .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
+.delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
+.delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }

@@ -1,0 +1,35 @@
+#content{width: 1100px; margin: 0 auto;background: #f1f1f1;}
+div.main{
+	overflow-x: hidden; 
+	position: relative; 
+	left: 50%; 
+	margin-left: -1200px;
+    width:2400px;
+    height: 200px;
+
+}
+
+   .gnb { padding:20px 0; width:1100px; background:#00a24d;}
+   .gnb nav ul{ padding:0; overflow:hidden}
+   .gnb nav li{ float:left; width:20%; text-align:center; list-style:none;}
+.gnb nav .scroll{
+    color: #fff;font-size: 17px;
+}
+
+   .wp1, .wp2, .wp3, .wp4, .wp5, .wp6 { visibility: hidden; width:1100px; height:400px; margin-top: 50px;}
+   .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
+.delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
+.delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
+
+.wp1{background: url(../image/content1/about01.jpg);background-repeat: no-repeat}
+.wp2{background: url(../image/content1/about02.jpg);background-repeat: no-repeat}
+.wp3{background: url(../image/content1/about03.jpg);background-repeat: no-repeat}
+.wp4{background: url(../image/content1/about04.jpg);background-repeat: no-repeat}
+.wp5{background: url(../image/content1/about05.jpg);background-repeat: no-repeat}
+
+
+.stuck {
+  position:fixed;
+  top:0;
+  z-index:10;
+  margin:0;

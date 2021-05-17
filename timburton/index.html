@@ -1,0 +1,297 @@
+<!DOCTYPE HTML>
+<html lang="en">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>TIMBURTON by Hyeono</title>
+<link rel="shortcut icon"  type="image/x-icon"  href="favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+<link rel="stylesheet" href="css/common.css">
+<link rel="stylesheet" href="css/layout.css">
+<link rel="stylesheet" href="css/rsslider.css" media="screen" />
+<link rel="stylesheet" href="css/swiper.css">
+<link rel="stylesheet" href="css/swiper.min.css">
+
+
+<script src="js/prefixfree.min.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script src="js/responsiveslides.min.js"></script>
+<script src="js/rss.js"></script>
+<script src="js/swiper.min.js"></script>
+<script src="js/sss.js"></script>
+<script>
+  $(document).ready(function() {
+  	var screenSize = $(window).width();//스크린 해상도 잡기
+  	var current=false;//true=>영상 재생중 false=>영상x
+  	
+  	if( screenSize > 640){
+        //$("#videoBG").show();
+        $("#imgBG").hide();
+      }
+    if(screenSize <= 640){
+        //$("#videoBG").hide();
+        $(".video").attr('src','');//비디오태그의 속성값을 지움
+        $("#imgBG").show();
+      }
+  	
+   $(window).resize(function(){    //웹브라우저 크기 조절시 반응하는 이벤트 메소드()
+      screenSize = $(window).width(); 
+      
+      if( screenSize > 640 && current==false){
+      	
+        //$("#videoBG").show();
+        $(".video").attr('src','images/bg.mp4');
+        $("#imgBG").hide();
+        current=true;
+      }
+      if(screenSize <= 640){
+        //$("#videoBG").hide();
+        $(".video").attr('src','');
+        $("#imgBG").show();
+        current=false;
+      }
+    }); 
+  });
+ </script>
+ <script>
+       
+ </script>
+<script>
+	// <![CDATA[
+		try {
+			window.addEventListener('load', function(){
+	    	    setTimeout(scrollTo, 0, 0, 1); 
+	    	}, false);
+		} catch(e) {}
+	// ]]>
+</script>
+<!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="wrap">
+  <div class="img_box">
+   <img src="images/back.png" id="imgBG">
+    </div>
+    <header>
+        <div class="header_inner">
+            <div class="logo">
+                <h1>Tim Burton</h1>
+            </div> <!--logo e-->
+            <nav id="nav" class="main_menu prest">
+                <ul class="tattoo">
+                    <li><a href="sub1.html">Gallery</a></li>
+                    <li><a href="sub_2.html">Movie</a></li>
+                    <li><a href="sub_3.html">Book</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="sub_5.html">About</a></li>
+                </ul>
+            </nav> <!--nav e-->
+        </div> <!--header_inner e-->        
+    </header> <!--header e-->
+    <video class="video" muted autoplay loop="100" id="videoBG" src="images/bg.mp4"></video> <!--video e-->
+    <!--<img src="" alt="" id="imgBG">-->
+    <article>
+        <section class="gallery">
+            <h2>Gallery</h2>
+            <div class="t_img">
+                <img src="images/t1.jpg" alt="">
+            </div>
+            <div class="list">
+                <ul>
+                    <li class="m">
+                        <img src="images/g1.jpg" alt="">
+                        <dl>
+                            <dt>Willy Wanka</dt>
+                            <dd>by Tim Burton</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/g2.jpg" alt="">
+                        <dl>
+                            <dt>The boy with nails in his eyes</dt>
+                            <dd>by Tim Burton</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/g3.jpg" alt="">
+                        <dl>
+                            <dt>Willy Wanka</dt>
+                            <dd>by Tim Burton</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/g4.jpg" alt="">
+                        <dl>
+                            <dt>The joker</dt>
+                            <dd>by Tim Burton</dd>
+                        </dl>
+                    </li>
+                </ul>
+                <div class="blank"></div>
+                <ul>
+                    <li>
+                        <img src="images/g8.jpg" alt="">
+                        <dl>
+                            <dt>Corpse bride</dt>
+                            <dd>by Tim Burton</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/g6.jpg" alt="">
+                        <dl>
+                            <dt>Willy Wanka</dt>
+                            <dd>by Tim Burton</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/g7.jpg" alt="">
+                        <dl>
+                            <dt></dt>
+                            <dd>by Tim Burton</dd>
+                        </dl>
+                    </li>
+                    <li>
+                        <img src="images/g5.jpg" alt="">
+                        <dl>
+                            <dt>santa jack</dt>
+                            <dd>by Tim Burton</dd>
+                        </dl>
+                    </li>
+                </ul>
+            </div>
+        </section> <!--gallery e-->
+        <section class="movie">
+        <h2>Movie</h2>
+         <div class="callbacks_container">
+            <ul class="rslides" id="slider4">
+              <li>
+                  <img src="images/m1.jpg" alt="">
+                  <p class="caption">Miss Peregrine's Home For Peculiar Children, 2016</p>
+              </li>
+              <li>
+                <img src="images/m2.jpg" alt="어벤져스 스틸컷">
+                <p class="caption">Big Eyes, 2014</p>
+              </li>
+              <li>
+                <img src="images/m3.jpg" alt="판타스틱포 스틸컷">
+                <p class="caption">Frankenweenie, 2012</p>
+              </li>
+              <li>
+                <img src="images/m4.jpg" alt="판타스틱포 스틸컷">
+                <p class="caption">Dark Shadows, 2012</p>
+              </li>
+              <li>
+                <img src="images/m5.jpg" alt="판타스틱포 스틸컷">
+                <p class="caption">Alice In Wonderland, 2010</p>
+              </li>
+              <li>
+                <img src="images/m6.jpg" alt="판타스틱포 스틸컷">
+                <p class="caption">Sweeney Todd: The Demon Barber Of Fleet Street, 2007</p>
+              </li>
+              <li>
+                <img src="images/m7.jpg" alt="판타스틱포 스틸컷">
+                <p class="caption">Corpse Bride, 2005</p>
+              </li>
+              <li>
+                <img src="images/m8.jpg" alt="판타스틱포 스틸컷">
+                <p class="caption"></p>
+              </li>
+              <li>
+                <img src="images/m9.jpg" alt="판타스틱포 스틸컷">
+                <p class="caption">Charlie And The Chocolate Factory, 2005</p>
+              </li>
+            </ul>
+         </div>
+        </section> <!--movie e-->
+        <section class="book">
+          <h2>Book</h2>
+           <div class="tabss">
+            <div class="tabs tattoo">
+			    <a href="#" class="active">corpse bride</a>
+			    <a href="#">The Melancholy Death of Oyster Boy &amp; Other Stories</a>
+			    <a href="#">Tim Burton</a>
+			    <a href="#">Disney's Alice In Wonderland</a>
+			    <a href="#">Frankenweenie: A Graphic Novel</a>
+		    </div>
+    		<div class="swiper-container">
+    			<div class="swiper-wrapper">
+    				<div class="swiper-slide">
+	    				<div class="content-slide">
+    						<div class="page1 p">
+	    						<img src="images/b1.jpg" alt="">
+		    					<p>In an unspecified Victorian-era village somewhere in Europe, Victor Van Dort (Johnny Depp), the son of nouveau riche fish merchants, and Victoria Everglot (Emily Watson), the neglected daughter of snobbish aristocrats, are preparing for their arranged marriage, which will simultaneously raise the social class of Victor's parents and restore the wealth of Victoria's penniless family. Both have concerns about marrying someone they do not know, but upon meeting for the first time, they fall for each other. After the shy Victor ruins the wedding rehearsal by forgetting his vows and is scolded by Pastor Galswells (Christopher Lee), he flees and practices his wedding vows in the nearby forest, placing the wedding ring on a nearby upturned tree root.
+		    					
+		    					The root turns out to be the finger of a murdered woman in a tattered bridal gown named Emily (Helena Bonham Carter), who rises from the grave claiming that she is now Victor's wife. After fainting, Victor wakes up and finds out he was spirited away to the surprisingly festive Land of the Dead. The bewildered Victor learns the story of how Emily, his new bride, was murdered years ago by an unknown perpetrator on the night of her secret elopement. Emily, as a wedding gift, reunites Victor with his long-dead dog, Scraps. Meanwhile, Victoria's parents hear that Victor has been seen in another woman's arms, and become suspicious.
+                                </p>
+			    			</div>
+    					</div>
+		    		</div>
+				<div class="swiper-slide">
+					<div class="content-slide">
+                		<div class="page2 p">
+							<img src="images/b2.jpg" alt="">
+		    					<p>In an unspecified Victorian-era village somewhere in Europe, Victor Van Dort (Johnny Depp), the son of nouveau riche fish merchants, and Victoria Everglot (Emily Watson), the neglected daughter of snobbish aristocrats, are preparing for their arranged marriage, which will simultaneously raise the social class of Victor's parents and restore the wealth of Victoria's penniless family. Both have concerns about marrying someone they do not know, but upon meeting for the first time, they fall for each other. After the shy Victor ruins the wedding rehearsal by forgetting his vows and is scolded by Pastor Galswells (Christopher Lee), he flees and practices his wedding vows in the nearby forest, placing the wedding ring on a nearby upturned tree root.
+		    					
+		    					The root turns out to be the finger of a murdered woman in a tattered bridal gown named Emily (Helena Bonham Carter), who rises from the grave claiming that she is now Victor's wife. After fainting, Victor wakes up and finds out he was spirited away to the surprisingly festive Land of the Dead. The bewildered Victor learns the story of how Emily, his new bride, was murdered years ago by an unknown perpetrator on the night of her secret elopement. Emily, as a wedding gift, reunites Victor with his long-dead dog, Scraps. Meanwhile, Victoria's parents hear that Victor has been seen in another woman's arms, and become suspicious.
+                                </p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+					<div class="content-slide">
+						<div class="page3 p">
+							<img src="images/b3.jpg" alt="">
+		    					<p>In an unspecified Victorian-era village somewhere in Europe, Victor Van Dort (Johnny Depp), the son of nouveau riche fish merchants, and Victoria Everglot (Emily Watson), the neglected daughter of snobbish aristocrats, are preparing for their arranged marriage, which will simultaneously raise the social class of Victor's parents and restore the wealth of Victoria's penniless family. Both have concerns about marrying someone they do not know, but upon meeting for the first time, they fall for each other. After the shy Victor ruins the wedding rehearsal by forgetting his vows and is scolded by Pastor Galswells (Christopher Lee), he flees and practices his wedding vows in the nearby forest, placing the wedding ring on a nearby upturned tree root.
+		    					
+		    					The root turns out to be the finger of a murdered woman in a tattered bridal gown named Emily (Helena Bonham Carter), who rises from the grave claiming that she is now Victor's wife. After fainting, Victor wakes up and finds out he was spirited away to the surprisingly festive Land of the Dead. The bewildered Victor learns the story of how Emily, his new bride, was murdered years ago by an unknown perpetrator on the night of her secret elopement. Emily, as a wedding gift, reunites Victor with his long-dead dog, Scraps. Meanwhile, Victoria's parents hear that Victor has been seen in another woman's arms, and become suspicious.
+                                </p>
+						</div>
+					</div>
+				</div>
+				<div class="swiper-slide">
+	    				<div class="content-slide">
+    						<div class="page1 p">
+	    						<img src="images/b4.jpg" alt="">
+		    					<p>In an unspecified Victorian-era village somewhere in Europe, Victor Van Dort (Johnny Depp), the son of nouveau riche fish merchants, and Victoria Everglot (Emily Watson), the neglected daughter of snobbish aristocrats, are preparing for their arranged marriage, which will simultaneously raise the social class of Victor's parents and restore the wealth of Victoria's penniless family. Both have concerns about marrying someone they do not know, but upon meeting for the first time, they fall for each other. After the shy Victor ruins the wedding rehearsal by forgetting his vows and is scolded by Pastor Galswells (Christopher Lee), he flees and practices his wedding vows in the nearby forest, placing the wedding ring on a nearby upturned tree root.
+		    					
+		    					The root turns out to be the finger of a murdered woman in a tattered bridal gown named Emily (Helena Bonham Carter), who rises from the grave claiming that she is now Victor's wife. After fainting, Victor wakes up and finds out he was spirited away to the surprisingly festive Land of the Dead. The bewildered Victor learns the story of how Emily, his new bride, was murdered years ago by an unknown perpetrator on the night of her secret elopement. Emily, as a wedding gift, reunites Victor with his long-dead dog, Scraps. Meanwhile, Victoria's parents hear that Victor has been seen in another woman's arms, and become suspicious.
+                                </p>
+			    			</div>
+    					</div>
+		    		</div>
+		    		<div class="swiper-slide">
+	    				<div class="content-slide">
+    						<div class="page1 p">
+	    						<img src="images/b5.jpg" alt="">
+		    					<p>In an unspecified Victorian-era village somewhere in Europe, Victor Van Dort (Johnny Depp), the son of nouveau riche fish merchants, and Victoria Everglot (Emily Watson), the neglected daughter of snobbish aristocrats, are preparing for their arranged marriage, which will simultaneously raise the social class of Victor's parents and restore the wealth of Victoria's penniless family. Both have concerns about marrying someone they do not know, but upon meeting for the first time, they fall for each other. After the shy Victor ruins the wedding rehearsal by forgetting his vows and is scolded by Pastor Galswells (Christopher Lee), he flees and practices his wedding vows in the nearby forest, placing the wedding ring on a nearby upturned tree root.
+		    					
+		    					The root turns out to be the finger of a murdered woman in a tattered bridal gown named Emily (Helena Bonham Carter), who rises from the grave claiming that she is now Victor's wife. After fainting, Victor wakes up and finds out he was spirited away to the surprisingly festive Land of the Dead. The bewildered Victor learns the story of how Emily, his new bride, was murdered years ago by an unknown perpetrator on the night of her secret elopement. Emily, as a wedding gift, reunites Victor with his long-dead dog, Scraps. Meanwhile, Victoria's parents hear that Victor has been seen in another woman's arms, and become suspicious.
+                                </p>
+			    			</div>
+    					</div>
+		    		</div>
+			</div>
+		</div>
+            </div>
+        </section> <!--book e-->
+        <section class="tim">
+            
+        </section> <!--tim e-->
+    </article> <!--article e-->
+    <footer>
+        <div>&copy; 2017 Tim Burton</div>
+    </footer> <!--footer e-->
+</div> <!--wrap e-->
+</body>
+</html>

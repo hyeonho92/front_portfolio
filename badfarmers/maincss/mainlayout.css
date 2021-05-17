@@ -1,0 +1,372 @@
+div.main{
+	overflow-x: hidden; 
+	position: relative; 
+	left: 50%; 
+	margin-left: -1200px;
+	margin-bottom: 100px;
+    width:2400px;
+    height: 800px;
+    overflow: hidden
+}
+.gallery{position:relative;overflow:hidden; width:7200px;
+          height:800px;left:0; top:0;}
+.gallery ul li{ float:left; list-style:none; }
+.dock{width:500px; position:absolute; right: 100px; bottom: 50px;}
+
+.dock span.mbutton{ margin-right:15px; cursor:pointer; display:block;
+           float:left; width:20px; height:20px;background:url(../images/bar1.png)}
+
+
+
+img{border:0; vertical-align:top;}
+
+
+
+
+
+#content{
+	overflow: hidden;
+	width: 1100px;
+	margin: 0 auto;
+	
+}
+#content .shop{
+	overflow: hidden;
+    border: solid 2px green;
+    margin-bottom: 50px;
+    border-radius: 10px;
+    background: #fff;
+}
+#content .shop .products{
+	overflow: hidden;
+	width: 700px;
+	/*border-top: solid 1px #73b048;*/
+	margin: 0 0 50px 200px;
+	text-align: center;
+}
+#content .shop .products h3{
+	font-size: 30px;
+	color: #73b048;
+	margin-top: 10px;
+	font-family: arial;
+}
+#content .shop .shop_tap{
+	overflow: hidden; 
+	width: 500px; 
+	border-bottom: solid 1px #73b048; 
+	margin-left: 300px; 
+	margin-bottom: 50px; 
+	text-align: center;
+}
+#content .shop .shop_tap div{ 
+	margin: 20px 20px 20px 60px; 
+	float: left;
+}
+#content .list li img{
+	width: 250px;
+	height: 250px;
+}
+
+#content .list li{
+	float: left;
+	background: #fff;
+	margin-bottom: 30px;
+}
+#content .list .p1{
+	margin-right: 33.3px;
+}
+#content .next{
+	text-align: center;
+	margin-bottom: 70px;
+}
+
+
+
+
+
+
+.tabs{ position: relative; width: 1100px;}
+.tabs h3 a{font-family: arial;}
+.tabs a.tab {display:block; width:150px; height:30px;overflow:hidden; position:absolute; overflow: hidden; text-align: center} 
+.tabs .contlist{display:none; margin-top:50px;line-height:1.5em;
+height: 250px; overflow: hidden;padding-top: 50px;} 
+.contlist li{float: left}
+.tab1{top: 0; left: 325px;}
+.tab2{top: 0; left: 475px;}
+.tab3{top: 0; left: 625px;}
+
+
+
+
+
+
+
+.tabs{width:1375px; overflow:hidden; 
+        position:relative;}
+.tabs *{margin:0; padding:0;}
+.contlist{position:relative; left:0; top:0; width:2750px;}
+.contlist ul li{float:left; list-style:none;}
+.sub_menu_box{width:70px;position:relative;left:510px;margin: 30px 0;}
+.sub_menu_box img{cursor:pointer;}
+.sub_menu_box .m1{ margin-right:20px;}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#content .left_content{
+	float: left;
+	width: 780px;
+}
+#content .right_content{
+	float: left;
+	width: 320px;
+}
+#content .left_content .blog{
+	width: 780px;
+	height: 550px;
+	background: #fff;
+	margin-bottom: 50px;
+    border: solid 2px green;
+    border-radius: 10px;
+    position: relative;
+}
+#content .left_content .blog ul{
+	margin-left: 15px;
+}
+#content .left_content h3{
+	font-size: 25px;
+	color: #006837;
+	margin: 10px 0 10px 5px;
+}
+#content .left_content dl{width: 750px;}
+#content .left_content .blog dt{
+	font-size: 18px; 
+	text-align: center;
+	margin: 10px 0;
+    font-family: 'NanumBarunGothic';
+
+}
+#content .left_content .blog dd{
+	text-align: center;
+	font-size: 14px;
+	margin-bottom: 10px;
+}
+
+
+#content .customer_instagram{
+    background: #fff;
+    width: 780px;
+    height: 750px;
+    border: solid 2px green;
+    border-radius: 10px;
+    position: relative
+}
+#content .customer_instagram .insta_list{
+    overflow: hidden;
+    margin-left: 45px;
+}
+
+#content .customer_instagram li{
+	float: left;
+	border-image: none;
+	margin-right: 25px;
+	margin-bottom: 25px;
+} /*여기 마진라이트값 수정해야함 원래는 50을 줘야하는거임*/
+
+#content .left_content .l_more{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.fa-plus{
+    font-size: 18px;
+    color: #006837;
+}
+#content .right_content h3{
+    font-size: 20px;
+	color: #006837;
+	margin: 10px 0 10px 5px;
+}
+#content .right_content .right{
+    width: 300px;
+    margin-left: 15px;
+	margin-bottom: 50px;
+    position: relative;
+    background: #fff;
+    border: solid 2px green;
+    border-radius: 10px;
+}
+#content .instagram img{
+    margin-bottom: 50px;
+}
+#content .right a{
+    margin-left: 25px;
+}
+#content .right_content .c_more{
+    position: absolute;
+    top: 5px;
+    right: 10px;
+}
+
+#content .magazine{
+	position: relative;
+}
+#content .right_content video{
+    margin-bottom: 30px;
+    margin-left: 25px;
+    
+}
+
+
+#content .right_content .notice{
+    width: 300px;
+    margin-left: 15px;
+	margin-bottom: 45px;
+    position: relative;
+    background: #fff;
+    border: solid 2px green;
+    border-radius: 10px;
+    position: relative;
+    
+}
+#content .right_content .notice li{
+    color: #666;
+    line-height: 2em;
+    font-size: 14px;
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+#content .right_content .n_more{
+    position: absolute;
+    top: 15px;
+    right: 5px;
+}
+
+
+#content .left_right{
+    overflow: hidden;
+    margin-bottom: 50px;
+}
+
+
+
+/*맵*/
+#content .map{
+    width: 1100px;
+    height: 400px;
+    background: #fff;
+}
+#content #map{
+    float: left;
+    width: 715px;
+    height: 400px;
+    display: inline-block
+}
+#content .map-c{
+    float: right;
+    width: 385px;
+    height: 400px;
+    /*padding: 25px;*/
+    
+}
+#content .map-c h3{
+    margin: 20px 0 0 10px;
+    font-size: 28px;
+}
+#content .map-c p{
+    font-size: 14px;
+    margin: 20px 10px 30px 20px;
+}
+#content .map-c .det{
+    font-size: 12px;
+    margin:0 0 15px 20px;
+}
+#content .map-c .det i{
+    float: left;
+    font-size: 18px;
+    margin: 0 8px 0 0;
+}
+#content .map-c button{
+    margin: 30px 20px;
+    padding: 20px 15px;
+    display: inline-block;
+    cursor: pointer;
+    background: none;
+    color: #546973;
+    border: 2px solid #78909c;
+    transition: all 0.3s;
+    border-radius: 10px;
+    outline: 0;
+}
+#content .map-c button:hover{
+    border-color: forestgreen;
+    color: forestgreen;
+}
+#content .map-c button:after{
+    content: 'Directions';
+    display: block;
+    font-size: 11px;
+    margin-top: 8px;
+}
+#content .map-c .fa-envelope:after{
+    content: 'Email';
+    margin: 8px 13px 0;
+}
+#content .map-c .center_icon{
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.social{
+    width: 300px;
+    margin-left: 15px;
+    border: solid 2px green;
+    background: #fff;
+    border-radius: 10px;
+}
+.social ul li a{
+	display: block;
+	margin-bottom: 10px;
+	padding: 20px 0;
+	border-radius: 4px;
+	color: #ffffff;
+	text-decoration: none;
+    width: 290px;
+    margin-left: 5px;
+    
+}
+.social li a:hover{opacity: 0.8;}
+.follow-tw{background-color: #CFB095;}
+.follow-fb{background-color: #5288f7;}
+.follow-gp{background-color: #f65d4a;}

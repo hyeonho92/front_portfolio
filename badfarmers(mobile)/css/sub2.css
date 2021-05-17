@@ -1,0 +1,65 @@
+.wrap{
+    background: url(../images/sub2/back.png) left center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    height: 50px;
+    margin-bottom: 75px;
+    text-align: center;
+}
+header #btn1{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    position: fixed center;
+}
+#nav{
+    width: 90%;
+    display: none;
+    background: #fff;
+    height: 380px;
+    position: absolute;
+    top: 50%;
+    margin-top: -190px;
+    left: 5%;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 30;
+    font-weight: bold;
+}
+
+
+
+.youtube{
+    overflow: hidden;
+}
+.youtube h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+.youtube .list ul li{
+    float: right;
+    margin-bottom: 50px;
+}
+.youtube video{
+    width: 90%;
+    height: 200px;
+    margin-left: 10%;
+}
+.youtube dl{
+    width: 70%;
+    margin-left: 30%;
+    margin-top: 30px;
+}
+.youtube dt{
+    text-align: right;
+    font-size: 16px;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+.youtube dd{
+    text-align: right;
+    letter-spacing: -1px;
+}

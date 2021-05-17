@@ -1,0 +1,35 @@
+/* CSS Document */
+*{margin:0; padding:0}
+
+/* boxgrid Jquery*/
+.boxgrid{width: 350px; height: 300px; overflow: hidden; position: relative;}
+.boxgrid img{position: absolute; top: 0; left: 0; border: 0;}
+.boxgrid dt{padding:5px 10px; color:#fff; font-weight:bold;font-family:arial;font-size:1.5em}
+.boxgrid dd{padding:10px 0 0 10px;color:#fff;font-size:1em}
+.boxcaption{ position: absolute; background: #000; height: 300px; width: 100%; opacity: .7;filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=70);
+-MS-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";}
+.boxgrid .boxcaption {top:255px;left: 0} /* top값을 수정한다.  */
+.boxgrid .boxcaption dd{line-height:1.5em}
+.boxgrid .boxcaption a{color:#FCF; text-decoration:none; }
+.shop_list{
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+}
+.shop_list li{
+    float: left
+}
+
+article#content{
+    width: 1100px;
+    margin: 0 auto;
+}
+#content .f_line li:nth-child(even){
+    margin: 0 25px;
+}
+#content .s_line li:nth-child(odd){
+    margin-right: 50px;
+}
+#content .t_line li:nth-child(even){
+    margin: 0 25px;
+}

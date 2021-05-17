@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>NOTICE</title>
+    <link rel="stylesheet" type="text/css" href="../../common/css/common.css">
+    <link rel="stylesheet" href="../common/css/sub2common.css">
+    <link rel="stylesheet" href="../css/sub2_content1.css">
+    <script src="../../mainjs/jquery-1.8.3.min.js"></script>
+    <script src="../../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../../common/js/fullnav.js"></script> 
+    <script src="../../common/js/prefixfree.min.js"></script>
+    <script src="../../mainjs/caption.js"></script>
+    <script src="../../common/js/move-top.js"></script>
+    <script src="../../common/js/easing.js"></script>
+    <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+			
+			var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+</head>
+<body>
+    <? include '../../common/board_header.html' ?>
+	<div class="container">
+		<article class="content" style="width:1100px; flote:none; margin:0 auto;">
+			

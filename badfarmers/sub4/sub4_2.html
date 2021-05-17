@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub4common.css">
+    <link rel="stylesheet" href="css/sub4_2.css">
+    <script src="../mainjs/jquery-1.8.3.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/fullnav.js"></script> 
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="js/caption.js" type="text/javascript"></script>
+    <script src="../common/js/move-top.js"></script>
+    <script src="../common/js/easing.js"></script>
+    <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+			
+			var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+</head>
+<body>
+    <? include '../common/sub_header.html' ?>
+    <div class="asdfasdf"><img src="common/image/centerimg.jpg" alt=""></div>
+	<div class="container">
+		<article id="content">
+           <h2 class="hidden">본문 컨텐츠 영역</h2>
+            <section class="shop_list">
+                <h3 class="hidden">물건 리스트</h3>
+                 <ul class="f_line">
+                     <li>
+                         <img src="common/image/dayday.jpg" alt="">
+                     </li>
+                     <li class="boxgrid">
+                        <img src="image/content2/to.jpg" alt="Learn about donation" width="350" />
+                        <dl class="boxcaption">
+                            <dt>이걸로 버텨바</dt>
+                            <dd>당신의 출근시간, 공강시간, 간식시간 등 바쁜 시간을 책임질 이걸로 버텨바! 퀴노아, 해바라기씨, 아몬드, 호두, 건포도, 호박씨, 현미 시리얼, 땅콩, 꿀 몸에 좋은 재료만 골라 넣어 만들었습니다.
+                            <br/><a href="#">Order</a>
+                            </dd>
+                        </dl>
+                   </li>
+                 </ul>
+                 <ul class="s_line">
+                     <li class="boxgrid">
+                        <img src="image/content2/m.jpg" alt="Learn about donation" width="350" />
+                        <dl class="boxcaption">
+                            <dt>견과를 안먹은 결과</dt>
+                            <dd>울 엄마는 늘 말씀하셨지. 니가 아픈 건 견과를 안먹은 결과라고. 그래서 탄생했다. 견과를 안먹으면 어떻게 되는지 결과를 지켜보자고!! 매일 하루 2봉지 챙겨 먹자. 아침저녁!
+                            <br/><a href="#">Order</a>
+                            </dd>
+                        </dl>
+                   </li>
+                    <li class="boxgrid">
+                        <img src="image/content2/bra.jpg" alt="Learn about donation" width="350" />
+                        <dl class="boxcaption">
+                            <dt>브라질너트</dt>
+                            <dd>하루 2-3알이면 충분한 슈퍼푸드, 브라질너트입니다. 
+                            <br/><a href="#">Order</a>
+                            </dd>
+                        </dl>
+                   </li>
+                    <li class="boxgrid">
+                        <img src="image/content2/cacao.jpg" alt="Learn about donation" width="350" />
+                        <dl class="boxcaption">
+                            <dt>카카오닙스</dt>
+                            <dd>2017년 대세 슈퍼푸드! 녹차의 201배 카테킨이 많은 카카오닙스! 
+                            <br/><a href="#">Order</a>
+                            </dd>
+                        </dl>
+                   </li>
+                 </ul>
+            </section>
+        </article>
+    </div>
+        <? include'../common/sub_footer.html' ?>
+</body>
+</html>

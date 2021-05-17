@@ -1,0 +1,82 @@
+/*-------------------------------------------------------------------*/
+#wrap{
+    background: #000;
+}
+article{
+  width: 1400px;
+  margin: 0 auto;
+  background: url(../images/11.png) right bottom no-repeat;
+  background-position: 0 90%;
+}
+article section{
+  overflow: hidden;
+}
+article section h3{
+  font-size: 70px;
+  margin: 50px 0;
+  color: #fff;
+}
+article section img{
+  width: 40%;
+  float: left;
+}
+article section p{
+  margin-left: 43%;
+  margin-right: 5%;
+  color: #fff;
+  font-size: 18px;
+}
+
+ /* 일반 pc */
+@media screen and (max-width:1280px) {
+  #wrap{
+    background: #fff
+  }
+    article{
+        width: auto;
+        margin: 0;
+    }
+    article section h3 {
+      font-size: 40px;
+      margin-left: 5%;
+    }
+}
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    article{
+        position: relative;
+        width: 80%;
+        margin-left: 20%;
+        transition: all 1s;
+    }
+    article section h3{
+      text-align: center;
+    }
+    article section img{
+      height: 300px;
+    }
+    article section p{
+      margin: 0;
+    }
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+    article{
+        position: relative;
+        width: auto;
+        margin-left: 0;
+        transition: all 1s;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+  header{
+    height: 60px;
+  }
+  article section p{
+    font-size: 14px;
+  }
+}   

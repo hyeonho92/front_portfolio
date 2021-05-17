@@ -1,0 +1,457 @@
+/* 와이드 pc  */
+#wrap{
+    background: url(../images/111.png) right center no-repeat;
+    background-size: cover;
+}
+
+/*video*/
+.video{
+    width: 100%;
+    overflow: hidden;
+    margin: 0;
+}
+#vidoeBG{
+    position:absolute; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100; /*다른요소보다 아래에 위치*/
+}
+
+article{
+    width: 1400px;
+    margin: 0 auto;
+    /*background: url(../images/1.png) bottom ;
+    background-repeat: repeat-x;*/
+}
+@keyframes scale {
+	0% { transform:scale(0); }	
+	100% { transform:scale(1); }
+}
+/*gallery*/
+article .gallery{
+    position: relative;
+    top: -200px;
+    overflow: hidden;
+    transition:all 0.5s; animation:scale 1s 1;
+    
+}
+article h2{
+    font-size: 30px;
+    margin: 30px 0;
+    color: #fff;
+    font-family: MiltonianTattoo-Regular;
+}
+article .gallery .list li{
+    float: left;
+    width: 25%;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+article .gallery .list li img{
+    /*width: 95%;
+    margin: 0 2.5%;*/
+    position: relative;
+}
+article .gallery .list ul{
+    overflow: hidden;
+}
+article .gallery .list .blank{
+    width: 100%;
+    height: 50px;
+}
+
+article .gallery .t_img{
+    display: none;
+}
+article .gallery .list li>m{
+    position: relative;
+}
+article .gallery .list dl{
+    width: 100%;
+    font-size: 25px;
+    color: #000;
+    position: absolute;
+    bottom: 30px;
+    left: -50px;
+    transform: scale(10);
+    opacity: 0;
+    transition: all 0.6s;
+}
+article .gallery .list li:hover dl{
+    opacity: 1;
+    transform: scale(1);
+}
+
+
+
+
+
+/*movie*/
+article .movie{
+    overflow: hidden;
+    margin: -100px 0 200px 0;
+    transition:all 0.5s; animation:scale 1s 1;
+}
+article .movie .callbacks_container li img{
+    height: 600px;
+}
+
+/*book*/
+article .book{
+    margin-bottom: 75px;
+    transition:all 0.5s; animation:scale 1s 1;
+}
+article .book .tabss{
+    width: 95%;
+    margin: 0 2.5%;
+    overflow: hidden;
+}
+article .book .tabs{
+    overflow: hidden;
+    float: left;
+    width: 20%;
+}
+article .book .tabs a{
+    display: block;
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+article .swiper-container{
+    float: left;
+    width: 80%;
+}
+article .book .p{
+    overflow: hidden;
+}
+article .book .swiper-container .p img{
+    float: left;
+}
+article .book .swiper-container .p p{
+    margin-left: 350px;
+    margin-right: 50px;
+    font-size: 16px;
+    color: #fff;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* 일반 pc */
+@media screen and (max-width:1280px) {
+    #wrap{
+        width: auto;
+        background-image: none;
+        background: #000;
+    }
+    header{
+        width: 100%;
+        margin: 0;
+    }
+    header .header_inner{
+        width: auto;
+    }
+    article{
+        width: auto;
+        margin: 0;
+        background: url(../images/11.png) right bottom no-repeat;
+    }
+    article .gallery{
+        position: relative;
+        top: 0;
+    }
+    article .gallery .list ul{
+        width: 100%;
+    }
+    article .gallery .list ul li{
+        width: 33.33%;
+    }
+    article .gallery .list ul li:nth-child(4){
+        display: none;
+    }
+    article .movie{
+        margin-top: 0;
+        margin-bottom: 150px;
+    }
+    footer div{
+        width: 100%;
+    }
+}
+
+
+/* 테블릿 */
+@media screen and (max-width:1024px) {
+    #wrap{
+        background: #000;
+    }
+    header{
+        position: fixed;
+        width: 20%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        transition: all 0.5s;
+    }
+    header .header_inner{
+        width: auto;
+    }
+    header .header_inner .logo{
+        float: none;
+        width: auto;
+        
+    }
+    header .header_inner .logo h1{
+        width: 98%;
+        margin: 30px 1% 75px 1%;
+        font-size: 37px;
+        text-align: center;
+    }
+    header .header_inner nav{
+        float: none;
+        position: relative;
+        width: 90%;
+        height: 200px;
+        margin-left: 5%;
+        transition: all 1s;
+    }
+    header .header_inner nav li{
+        float: none;
+        width: 95%;
+        margin: 0 2.5% 30px 2.5%;
+        text-align: center;
+    } 
+    .video{
+        position: relative;
+        width: 80%;
+        margin-left: 20%;
+        transition: all 1s;
+    }
+    #vidoeBG{
+    position:absolute; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:0; /*다른요소보다 아래에 위치*/
+}
+    
+    article{
+        position: relative;
+        width: 80%;
+        margin-left: 20%;
+        transition: all 1s;
+    }
+    article .gallery .list li{
+       float: left;
+        transition:all 0.5s; animation:scale 1s 1;
+    }
+    article .gallery .list .p_img{
+        display: none;
+    }
+    article .gallery .t_img{
+        display: block;
+    }
+    article .gallery h2{
+        position: absolute;
+        top: 0;
+        left: 30px;
+        color: #000;
+    }
+    article .gallery .list t_img img{
+        width: 100%;
+    }
+    article .gallery .list img{
+        width: 100%;
+        margin: 0;
+    }
+    article .gallery .list dl{
+        font-size: 20px;
+        left: 0;
+    }
+    article .gallery .list .blank{
+        display: none;
+    }
+    article .gallery .list ul:nth-child(1){
+        display: none;
+    }
+    article .gallery .list ul:nth-child(2) li{
+        float: left;
+        margin: 0;
+    }
+    article .movie{
+        transition:all 0.5s; animation:scale 1s 1;
+    }
+    article .movie .callbacks_container li img{
+        height: 300px;
+    }
+    article .book{
+        display: none;
+    }
+    footer div{
+        position: relative;
+        z-index: 30;
+    }
+}
+
+/* 소형 테블릿 */
+@media screen and (max-width:768px) {
+	header{
+        position: inherit;
+        width: 100%;
+        height: 60px;
+        transition: all 0.5s;
+    }
+    header .header_inner{
+        width: auto;
+        height: 30px;
+    }
+    header .header_inner .logo{
+        float: left;
+        width: 30%;
+        margin: 15px 0 0 15px;
+        height: 30px;
+    }
+    header .header_inner .logo h1{
+        font-size: 25px;
+        margin: 0;
+        padding: 0;
+    }
+    header .header_inner nav{
+        float: right;
+        width: 67%;
+        margin: 0;
+        margin-top: 15px;
+        transition: all 1s;
+        height: 30px;
+    }
+    header .header_inner nav li{
+        float: left;
+        width: auto;
+        text-align: center;
+        font-size: 18px;
+        margin-right: 5%;
+    } 
+      .video{
+        position: relative;
+        width: auto;
+        margin:0;
+        transition: all 1s;
+    }
+    article{
+        position: relative;
+        width: auto;
+        margin-left: 0;
+        transition: all 1s;
+    }
+}
+
+/* 모바일 */
+@media screen and (max-width:640px) {
+    #imgBG{
+	position:absolute; /*고정=>fixed/ 스크롤처리=>absolute */
+   left:50%;
+   top:50%; /*오른쪽, 아래에 여백을 두지않고 꽉차게 표시*/
+   width:auto;
+   min-width:100%; /*동영상 너비를 꽉차게*/
+   height:auto;
+   min-height:100%; /*동영상 높이를 꽉차게*/
+  transform:translateX(-50%) translateY(-50%);
+   z-index:-100;
+   display:none;
+}
+    #wrap{
+        background: none;
+    }
+    .img_box{
+        clear: both;
+    }
+    header{
+        position: relative;
+        background: none;
+        height: 100%;
+    }
+    header .header_inner{
+        height: 100%;
+        background: none;
+    }
+    header .header_inner .logo{
+        float: none;
+        width: auto;
+        margin-bottom: 50px;
+        text-align: center;
+        margin: 0;
+    }
+    header .header_inner .logo h1{
+        width: auto;
+        margin: 0;
+        margin-top: 15%;
+        text-align: center;
+        font-size: 30px;
+    }
+    header .header_inner nav{
+        float: none;
+        width: 100%;
+        text-align: center;
+        margin: 0;
+        position: absolute;
+        top: 170%;
+    }
+    header .header_inner nav li{
+        float: none;
+        margin: 0;
+        margin-bottom: 20px;
+        font-size: 20px;
+        color: #071a28;
+        
+    }
+    .video{
+        display: none;
+    }
+    article{
+        display: none;
+    }
+    footer{
+        position: absolute;
+        bottom: 0;
+    }
+}
+
+/* 최소 사이즈 처리 */
+@media screen and (max-width:480px) {
+	#wrap { min-width:320px; }
+}
+
+

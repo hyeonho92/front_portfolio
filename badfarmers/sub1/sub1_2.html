@@ -1,0 +1,84 @@
+<?
+$g5_path="../gb";
+include_once("../gb/common.php");
+//include_once("../gb/head.sub.php");
+include_once("../gb/lib/latest.lib.php");
+?>
+<?php
+if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
+//include_once(G5_THEME_PATH.'/head.sub.php');
+include_once(G5_LIB_PATH.'/latest.lib.php');
+include_once(G5_LIB_PATH.'/outlogin.lib.php');
+include_once(G5_LIB_PATH.'/poll.lib.php');
+include_once(G5_LIB_PATH.'/visit.lib.php');
+include_once(G5_LIB_PATH.'/connect.lib.php');
+include_once(G5_LIB_PATH.'/popular.lib.php');
+?>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Badfarmers mene</title>
+    <link rel="stylesheet" type="text/css" href="../common/css/common.css">
+    <link rel="stylesheet" href="css/sub1_content2.css">
+    <link href="css/animate.css" rel="stylesheet">
+    <script src="../common/js/jquery-1.8.3.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/fullnav.js"></script> 
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="../common/js/move-top.js"></script>
+    <script src="../common/js/easing.js"></script>
+     <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+			
+			var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+</head>
+
+<body>
+    <? include '../common/sub_header.html' ?>
+    <article>
+    <h2 class="hidden">본문 컨텐츠 영역</h2>
+        <section class="menuboard">   
+            <h3>
+                배드파머스 메뉴
+            </h3>
+            <dl>
+                <dt>salad</dt>
+                <dd>배드파머스 11500won</dd>
+                <dd>아보콥 샐러드 13800won</dd>
+                <dd>스윗30 12500won</dd>
+                <dd>구아카그린 11500won</dd>
+                <dd>두볼 11500won</dd>
+                <dd>쉬림프볼 11500won</dd>
+                <dd>오픈샌드위치 7500won</dd>
+                <dd>단호박병아리콩스프 3900won</dd>
+            </dl>
+            <dl>
+                <dt>drink</dt>
+                <dd>미안하다 내몸아 7500won</dd>
+                <dd>그시절 그얼굴 7500won</dd>
+                <dd>아주보통의하루 8400won</dd>
+                <dd>이토록 가벼운 그날 7900won</dd>
+                <dd>살들아 잘있거라 7900won</dd>
+                <dd>늙지않아 8400won</dd>
+            </dl>
+        </section>
+    </article>
+    <? include '../common/sub_footer.html' ?>
+</body>
+</html>

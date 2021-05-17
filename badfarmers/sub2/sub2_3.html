@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+	<title>Badfarmers SNS</title>
+    <link rel="stylesheet" type="text/css" href="../common/css/common.css">
+    <link rel="stylesheet" href="common/css/sub2common.css">
+    <link rel="stylesheet" href="css/sub2_content3.css">
+    <link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+    <script src="../mainjs/jquery-1.8.3.min.js"></script>
+    <script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+    <script src="../common/js/fullnav.js"></script> 
+    <script src="../common/js/prefixfree.min.js"></script>
+    <script src="../mainjs/caption.js"></script>
+    <script src="../common/js/move-top.js"></script>
+    <script src="../common/js/easing.js"></script>
+    <script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+			
+			var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+</head>
+<body>
+    <? include '../common/sub_header.html' ?>
+    <div class="asdfasd"><img src="common/images/centerimg.jpg" alt="" ></div>
+	<div class="container">
+		<article>
+        <h2 class="hidden">본문 컨텐츠 영역</h2>
+		    <a href="https://ko-kr.facebook.com/badfarmers/"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+		    <a href="https://www.instagram.com/bad_farmers/"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+		</article>
+		<!-- content e -->
+	</div>
+	<!-- container e -->
+    <? include '../common/sub_footer.html' ?>
+</body>
+</html>

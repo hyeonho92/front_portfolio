@@ -1,0 +1,51 @@
+.fancyBox{
+    width: 1100px;
+    margin: 0 auto;
+}
+.fancyBox .main_list{
+    text-align: center;
+    margin-bottom: 100px;
+}
+.fancyBox .main_list dt{
+    font-size: 20px;
+    color: #333;
+    margin: 20px;
+}
+.fancyBox .main_list dd{
+    text-align: center;
+    font-size: 14px;
+    color: #666;
+}
+
+.fancyBox .sub_list li{
+    width: 350px;
+    height: 380px;
+    float: left;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.fancyBox .sub_list .mr{
+    margin: 0 25px;
+}
+.fancyBox .sub_list dt{
+    font-size: 13.5px;
+    color: #333;
+    margin: 15px 0;
+    font-weight: bold;
+}
+.fancyBox .sub_list dd{
+    font-size: 11px;
+    color: #666;
+    text-align: right;
+}
+
+.fancyBox h3{
+	text-indent: -999999px;
+    overflow: hidden;
+	margin-bottom: 50px;
+    background: url(../images/content1/Untitled-1.png);
+    width: 250px;
+    height: 70px;
+    margin-left: 425px;
+}
+

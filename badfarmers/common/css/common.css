@@ -1,0 +1,223 @@
+@charset "utf-8";
+@font-face{
+	font-family: "NanumBarunGothic-Regular"; 
+	src:url("font/NanumBarunGothic-Regular.ttf") format("truetype");
+}
+@font-face{
+	font-family: arial;
+	src:url("font/arial.ttf") format("truetype");
+}
+/* CSS Document */
+
+/* base */
+*{
+    font-family: "NanumBarunGothic-Regular";
+}
+body,input,textarea,select,button,table{
+	font-family:,'돋움',Dotum,'굴림',Gulim,AppleGothic,sans-serif; font-size:14px; 
+	color: #333;
+}
+body,div,header,footer,nav,aside,section,article,h1,h2,h3,h4,h5,h6,ul,ol,li,dl,dt,dd,p,form,fieldset,input,table,tr,th,td{
+	margin:0;padding:0
+}
+h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+	font-size:100%
+}
+ul,ol{
+	list-style:none
+}
+fieldset,img{
+	border:0; 
+	vertical-align:top;
+}
+address{
+	font-style:normal
+}
+p,dd{
+	line-height: 1.5em; 
+	text-align: justify;
+}
+.hidden{
+	position: absolute; 
+	left: -1000%; 
+	top: 0; 
+	width: 1px; 
+	height: 1px; 
+	overflow: hidden; 
+	color: #fff;
+}
+
+
+
+/* a-style */
+a{
+	color:#333;
+	text-decoration:none
+}
+a:hover,a:active,a:focus{
+	color:#333;
+	text-decoration:none;
+}
+
+
+
+/*skip nav*/
+#skip_nav{
+	position:relative;
+	width:100%;
+	overflow:hidden;
+}
+#skip_nav a{
+	display:block; 
+	height:1px; 
+	margin-bottom:-1px; 
+    overflow:hidden; 
+    text-align:center; 
+    text-decoration:none; 
+    color:#333; 
+    font-size:12px;
+}
+#skip_nav a:hover,#skip_nav a:focus,#skip_nav a:active{
+	display:block;
+	height:auto;
+	padding:5px 0; 
+	background:#f2f2f2;
+}
+
+/*header start*/
+.wrap{
+	background: #f1f1f1;
+	overflow-x: hidden;
+	width: 100%
+}
+
+
+#header{}
+#header .header_inner{
+    height: 150px;
+	width: 1100px; 
+	margin: 0 auto;
+    /*border: solid 1px;*/
+    margin: 0 auto;
+}
+#header .logo{
+    width: 300px;
+	float: left;
+	margin-top: 25px;
+}
+#header .all_menu{
+	float: left;
+	width: 800px;
+}
+
+/*nav*/
+#header .top_nav{
+    overflow: hidden;
+    margin: 15px 0 20px 630px;
+}
+#header .top_nav li{
+    float: left;
+    margin-left: 15px;
+    
+}
+/*#header .top_menu{
+	margin: 30px 0px 30px 490px;
+	overflow: hidden;
+}
+#header .top_menu li{
+	float: left; 
+	margin-left: 10px;
+    
+}
+#header .top_menu li a{
+    color: #666; 
+	font-size: 14px; 
+	font-family: arial;
+}*/
+/*#header .nav .dropdownmenu{margin-left:  100px;}*/
+.dropdownmenu{width:700;margin-left: 100px;}
+.dropdownmenu li.menu{position:relative;width: 130px;height: 50px;
+	float: left; text-align: center;line-height: 50px;}
+.dropdownmenu .menu:hover{border-top: solid 4px #006837; border-bottom: solid 4px #006837;}
+.dropdownmenu li.m1{margin-left:0px;}
+.dropdownmenu li h3{position:relative; height:20px; font-size: 18px;font-weight: bold; font-family: arial;}
+.dropdownmenu li h3 a{color:#006837;}
+
+
+ul.dropdownmenu li ul{position:absolute;top:40px; left:0;
+ padding:15px 0 5px 5px; width:130px; display: none; z-index: 50; 
+ background: #f1f1f1;border-bottom: solid 4px #006837;}
+ul.dropdownmenu li.m6 ul{left:-55px;}
+
+ul.dropdownmenu li ul li{padding-right:15px; width: 100%; clear: both;
+margin: 10px 0;}
+ul.dropdownmenu li.menu ul li a{ color:#999; font-weight:bold; font-size: 14px;
+}
+ul.dropdownmenu li.menu ul li a:hover{color:#090;}
+
+
+/*footer*/
+#footer{
+    background: #f9f9f9;
+    margin-top: 50px;
+}
+.footer_inner{
+	width: 1100px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+#footer .footer_content{
+	overflow: hidden;
+}
+#footer .content1{
+	border-bottom: 1px solid #999;
+	margin: 60px 0 5px 0;
+}
+#footer .content2{
+	border-top: 1px solid #999;
+}
+#footer .footer_info{
+	float: left;
+	margin-bottom: 50px;
+}
+#footer .footer_content dt{
+	margin: 20px 0;
+	font-size: 16px;
+	font-weight: bold;
+	font-family: arial;
+}
+#footer .footer_info dd span{
+	margin: 10px 0;
+	font-size: 20px;
+	font-weight: bold;
+	letter-spacing: 1px;
+	color: red;
+}
+#footer .footer_content dd{
+	font-size: 11px;
+	line-height: 25px;
+}
+#footer .footer_content .info_1{
+	float: left;
+	width: 700px;
+}
+#footer .footer_content .info_2{
+	float: left;
+	width: 300px;
+}
+
+
+
+
+.topbtn #toTop{display:block;width:58px;height:37px;
+      position:fixed;bottom:170px;left:50%;margin-left:550px;overflow:hidden}
+
+
+
+/* 서브메뉴 고정 */
+
+.menuScroll{position: fixed;
+   top:0; left:50%; margin-left: -550px;  z-index: 100; width:1100px; }
+
+

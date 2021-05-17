@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Untitled Document</title>
+
+<link href="animate.css" rel="stylesheet">
+<style>
+   *{margin:0; padding:0}
+   .gnb { padding:20px 0; border:1px solid #999; width:100%;
+       background:#F90; margin-top:100px}
+   nav ul{ padding:0; overflow:hidden}
+   nav li{ float:left; width:20%; text-align:center; list-style:none}
+   .wp1, .wp2, .wp3, .wp4, .wp5, .wp6 { visibility: hidden; margin:100px 0px; }
+   .bounceInLeft, .bounceInRight, .fadeInUp, .fadeInUpDelay, .fadeInDown, .fadeInUpD, .fadeInLeft, .fadeInRight { visibility: visible; }
+.delay-05s { animation-delay: 0.5s; -webkit-animation-delay: 0.5s; }
+.delay-1s { animation-delay: 1s; -webkit-animation-delay: 1s; }
+
+.stuck {
+  position:fixed;
+  top:0;
+  z-index:10;
+  margin:0;
+  
+}
+
+</style>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+
+<script src="jquery.waypoints.min.js"></script>
+<script src="sticky.min.js"></script>
+
+<script>
+$(document).ready(function() {
+
+
+          $('.wp1').waypoint(function() {    //스크롤링시 효과가 발생할 요소의 클래스나 아이디명.
+            $('.wp1').addClass('animated fadeInLeft');
+          }, {
+            offset: '75%'            //스크롤과의 거리
+          });
+    
+          $('.wp2').waypoint(function() {
+            $('.wp2').addClass('animated fadeInUp');
+          }, {
+            offset: '75%'
+          });    
+    
+          $('.wp3').waypoint(function() {
+            $('.wp3').addClass('animated fadeInDown');
+          }, {
+            offset: '50%'
+          });
+    
+          $('.wp4').waypoint(function() {
+            $('.wp4').addClass('animated fadeInDown');
+          }, {
+            offset: '75%'
+          });
+    
+          $('.wp5').waypoint(function() {
+            $('.wp5').addClass('animated fadeInRight');
+          }, {
+            offset: '75%'
+          });
+		  
+		 
+			  var sticky = new Waypoint.Sticky({
+				 element: $('.gnb')[0]
+			  });
+         
+   });
+</script>
+
+
+</head>
+
+<body>
+
+
+ <div class="gnb">
+  <nav>
+       <ul>
+         <li><a href="#1">asdf</a></li>
+         <li><a href="#2">asdfsaf</a></li>
+         <li><a href="#3">asdfasdf</a></li>
+         <li><a href="#4">afs24f</a></li>
+         <li><a href="#5">10as2f1a</a></li>
+       </ul>
+   </nav>
+ </div>
+ 
+   <div id="1" class="wp1 delay-05s">
+        <img src="../image/content1/sub1-1_02.jpg" alt="">
+     </div>
+      
+      <div id="2" class="wp2 delay-05s">
+         <img src="../image/content1/sub1-1_02.jpg" alt="">
+      </div>
+      
+      <div id="3" class="wp3 delay-05s">
+         <img src="../image/content1/sub1-1_02.jpg" alt="">
+      </div>
+
+<div id="4" class="wp4 delay-05s">
+         <img src="../image/content1/sub1-1_02.jpg" alt="">
+      </div>
+
+<div id="5" class="wp5 delay-05s">
+          <img src="../image/content1/sub1-1_02.jpg" alt="">
+      </div>
+
+</body>
+</html>

@@ -1,0 +1,71 @@
+.wrap{
+    background: url(../images/sub3/back.png) center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    height: 50px;
+    margin-bottom: 75px;
+    text-align: center;
+}
+header #btn1{
+    display: block;
+    text-align: center;
+    font-size: 30px;
+    position: fixed center;
+}
+#nav{
+    width: 90%;
+    display: none;
+    background: #fff;
+    height: 380px;
+    position: absolute;
+    top: 50%;
+    margin-top: -190px;
+    left: 5%;
+    text-align: center;
+    border-radius: 10px;
+    z-index: 30;
+    font-weight: bold;
+}
+
+.map_ h2{
+    font-size: 40px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.map_ #map_canvas{
+    width: 95%;
+    margin-left: 2.5%;
+    height: 300px;
+}
+.map_ dl{
+    width: 70%;
+    height: 200px;
+    margin-left: 15%;
+    text-align: center;
+    background: #fff;
+    opacity: 0.7;
+    position: relative;
+    top: -50px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+.map_ dd{
+    text-align: center;
+}
+.map_ #map_canvas2{
+    width: 95%;
+    margin-left: 2.5%;
+    height: 300px;
+}
+.map .tabs{
+    font-size: 20px;
+    text-align: center;
+}
+.map .tabs a{
+    display: inline-block;
+    padding: 40px;
+    font-weight: bold;
+}

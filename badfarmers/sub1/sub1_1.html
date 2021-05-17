@@ -1,0 +1,105 @@
+<?
+$g5_path="../gb";
+include_once("../gb/common.php");
+//include_once("../gb/head.sub.php");
+include_once("../gb/lib/latest.lib.php");
+?>
+<?php
+if (!defined('_GNUBOARD_')) exit; // 개별 페이지 접근 불가
+//include_once(G5_THEME_PATH.'/head.sub.php');
+include_once(G5_LIB_PATH.'/latest.lib.php');
+include_once(G5_LIB_PATH.'/outlogin.lib.php');
+include_once(G5_LIB_PATH.'/poll.lib.php');
+include_once(G5_LIB_PATH.'/visit.lib.php');
+include_once(G5_LIB_PATH.'/connect.lib.php');
+include_once(G5_LIB_PATH.'/popular.lib.php');
+?>
+
+
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Badfarmers About</title>
+<link rel="stylesheet" type="text/css" href="../common/css/common.css">
+<link rel="stylesheet" href="css/sub1_content1.css">
+<link href="css/animate.css" rel="stylesheet">
+<script src="../common/js/jquery-1.8.3.min.js"></script>
+<script src="../common/js/jquery-migrate-1.4.1.min.js"></script>
+<script src="../common/js/fullnav.js"></script> 
+<script src="../common/js/prefixfree.min.js"></script>
+<script src="../common/js/move-top.js"></script>
+<script src="../common/js/easing.js"></script>
+<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+			
+			var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				$().UItoTop({ easingType: 'easeOutQuart' });
+		});
+	</script>
+<script src="js/waypoints.min.js"></script>
+<script src="js/sticky.min.js"></script>
+<script src="js/way.js"></script>
+  
+</head>
+
+<body>
+<? include '../common/sub_header.html' ?>
+<article id="content">
+<h2 class="hidden">본문 컨텐츠 영역</h2>
+<div class="main"><img src="common/image/centerimg.jpg" alt=""></div>
+ <div class="gnb">
+  <nav>
+       <ul>
+         <li><a class="scroll" href="#a">Save your life</a></li>
+         <li><a class="scroll" href="#b">선조들의 지혜란</a></li>
+         <li><a class="scroll" href="#c">GOT SALAD</a></li>
+         <li><a class="scroll" href="#d">우리애들의 미래</a></li>
+         <li><a class="scroll" href="#e">우리는 배드파머스!</a></li>
+       </ul>
+   </nav>
+ </div>
+ 
+   <div class="hidden">
+        <dl>
+           <dt>"SAVE YOUR LIFE"</dt>
+           <dd>우리는 패스트푸드 세대입니다. 어릴적부터 가공 식품을 먹어온 우리는 만성적인 '영양불균형'을 갖고 있죠. 두통, 비영, 아토피 등 현대인 질병의 70%는 식습관에서 비롯됩니다. 이대로 가다간 모두 성인병으로 전개될 것입니다.</dd>
+           
+           <dt>"할머니 세대에 먹지 않았을 음식은 먹지말라."</dt>
+           <dd>근데 건강한 음식이 뭔지 알려면 많은 지식이 필요합니다. 뭐는 몸에 좋고, 뭐는 몸에 안좋고...복잡해요. 그래서 간단한 법칙을 하나만 알고 있으면 편합니다. 바로 "자연 그대로의 음식"을 먹는것,</dd>
+           
+           <dt>"GOT SALAD?"</dt>
+           <dd>그래서 샐러드가 좋은 겁니다. 자연 그대로의 재료를 생식으로 먹을 수 있죠.섬유질도 풍부하고 영양소도 파괴되지 않습니다. 이것만 꾸준히 먹어도 당신은 의사로부터 멀어질 것입니다.</dd>
+           
+            <dt>FOR OUR CHILDREN, FOR OUR FUTURE.</dt>
+           <dd>우리는 비록 패스트푸드를 먹고 자란 세대이지만, 생활 질병을 자연스럽게 달고 사는 세대이지만, 미래의 아이들에게는 우리의 식습관을 물려주지 않을 것입니다.</dd>
+           
+             <dt>CHANGE THE WORLD WITH THE "BAD"</dt>
+           <dd>나쁜 것들을 먹고 자란 배드 파머스(BAD FARMERS)가 만드는 자연 그대로의 음식 문화 우리젊은이들이 즐기는 가장 쿨한 문화로 만들겠습니다. 다함께 생명연장!!</dd>
+       </dl>
+   </div>
+ 
+ 
+   <div id="a" class="wp1 delay-05s"></div>
+      
+      <div id="b" class="wp2 delay-05s"></div>
+      
+      <div id="c" class="wp3 delay-05s"></div>
+
+    <div id="d" class="wp4 delay-05s"></div>
+
+    <div id="e" class="wp5 delay-05s"></div>
+    </article>
+  
+    <? include '../common/sub_footer.html' ?>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* 서브페이지 공통 영역 left/비쥬얼*/
+.asdfasdf{overflow: hidden; position: relative; left: 50%; margin-left: -1200px; margin-bottom: 50px;}
+
+
+
+.leftNav{
+	width: 200px; 
+	/*background-color: #00a24d;*/
+}
+
+.sidemenu h3{width:200px;
+	height:150px; 
+	text-indent:-9999px;
+    overflow:hidden; 
+    background:url(../images/sub2main.jpg);}
+
+.sidemenu li a {
+	display: block;
+	height:75px; 
+    text-indent:-9999px;
+    overflow:hidden;
+}
+	
+.sidemenu .menu1 a{
+	background: url(../images/sub1_menu01.jpg);
+}
+.sidemenu .menu2 a{
+	background: url(../images/sub1_menu02.jpg);
+}
+.sidemenu .menu3 a{
+	background: url(../images/sub1_menu03.jpg);
+}
+.sidemenu .menu1 a:hover{
+	background: url(../images/sub1_menu01_over.jpg);
+}
+.sidemenu .menu2 a:hover{
+	background: url(../images/sub1_menu02_over.jpg);
+}
+.sidemenu .menu3 a:hover{
+	background: url(../images/sub1_menu03_over.jpg);
+}
+
+
+.container{
+	width: 1100px; 
+	margin: 0 auto;
+	background: #f1f1f1;
+    overflow: hidden;
+	/*margin-top: 50px;*/
+}
+.container .leftNav{
+	float: left
+}
+.container .article{
+	float: left;
+}
+.topbtn #toTop{display:block;width:58px;height:37px;
+      position:fixed;bottom:35px;left:50%;margin-left:0;overflow:hidden}

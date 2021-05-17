@@ -1,0 +1,29 @@
+/*메인*/
+.asdfasd{overflow: hidden; position: relative; left: 50%; margin-left: -1200px; }
+
+.container{
+	width: 1100px;
+	margin: 0 auto;
+	overflow: hidden;
+    background: #f1f1f1;
+}
+article{
+    background: url(../images/content3/back.jpg);
+    width: 1100px;
+    height: 800px;
+    position: relative;
+}
+article a{
+    display: block;
+    font-size: 230px;
+}
+article .fa-facebook-square{
+    position: absolute;
+    top: 100px;
+    left: 100px;
+}
+article .fa-instagram{
+    position: absolute;
+    top: 500px;
+    left: 100px;
+}

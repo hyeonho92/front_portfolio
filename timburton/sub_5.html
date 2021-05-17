@@ -1,0 +1,93 @@
+<!DOCTYPE HTML>
+<html xml:lang="ko" lang="ko">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, target-densitydpi=medium-dpi" />
+<meta name="apple-mobile-web-app-capable" content="yes">
+<title>TIMBURTON by Hyeono</title>
+<link rel="shortcut icon"  type="image/x-icon"  href="favicon.ico">
+<link rel="apple-touch-icon-precomposed" href="app_icon.png">
+<link rel="apple-touch-startup-image" href="startup.png">
+<link rel="stylesheet" href="css/subcommon.css">
+<link rel="stylesheet" href="css/sub5.css">
+<link rel="stylesheet" type="text/css" href="http://netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.css">
+
+<script src="js/prefixfree.min.js"></script>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script src="js/jquery-migrate-1.4.1.min.js"></script>
+<script> 
+  $(document).ready(function() {
+   $(".menuOpen").toggle(function() {
+	 $(".main_menu").slideDown('slow');
+   }, function() {
+	 $(".main_menu").slideUp('fast');
+   });
+   
+   
+    var current=0;
+   $(window).resize(function(){ 
+      var screenSize = $(window).width(); 
+      if( screenSize > 640){
+        $(".main_menu").show();
+		 current=1;
+      }
+      if(current==1 && screenSize < 640){
+        $(".main_menu").hide();
+         current=0;
+      }
+    }); 
+    
+  });
+ </script>
+<script>
+	// <![CDATA[
+		try {
+			window.addEventListener('load', function(){
+	    	    setTimeout(scrollTo, 0, 0, 1); 
+	    	}, false);
+		} catch(e) {}
+	// ]]>
+</script>
+<!--[if lt IE 9]> 
+    <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+
+<!--[if lt IE 9]>
+    <script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+<![endif]-->
+</head>
+
+<body>
+<div id="wrap">
+      <header>
+        <div class="header_inner">
+            <div class="logo">
+                <h1><a href="index.html">Tim Burton</a></h1>
+            </div> <!--logo e-->
+            <a class="menuOpen" href="#"><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <nav id="nav" class="main_menu prest">
+                <ul class="tattoo">
+                    <li><a href="sub1.html">Gallery</a></li>
+                    <li><a href="sub_2.html">Movie</a></li>
+                    <li><a href="sub_3.html">Book</a></li>
+                    <li><a href="#">News</a></li>
+                    <li><a href="sub_5.html">About</a></li>
+                </ul>
+            </nav> <!--nav e-->
+        </div> <!--header_inner e-->        
+    </header> <!--header e-->
+    <article>
+    	<section>
+    		<h3>Timothy Walter Burton</h3>
+    		<img src="images/sub5/tim.jpg">
+    		<p>Timothy Walter Burton[1] (/ˈbɜːrtən/; born August 25, 1958) is an American film director, producer, artist, writer and animator. He is known for his dark, gothic, eccentric and quirky fantasy films such as Beetlejuice (1988), Edward Scissorhands (1990), the animated musical The Nightmare Before Christmas (1993), the biographical film Ed Wood (1994), the horror fantasy Sleepy Hollow (1999), and later efforts such as Corpse Bride (2005), Sweeney Todd: The Demon Barber of Fleet Street (2007), Dark Shadows (2012) and Frankenweenie (2012). He is also known for blockbusters such as the adventure comedy Pee-wee's Big Adventure (1985), the superhero films Batman (1989) and its first sequel Batman Returns (1992), the sci-fi film Planet of the Apes (2001), the fantasy drama Big Fish (2003), the musical adventure film Charlie and the Chocolate Factory (2005) and the fantasy film Alice in Wonderland (2010), which garnered a worldwide gross of over $1 billion.
+
+Burton has worked repeatedly with Johnny Depp, who has become a close friend of Burton since their first film together. He has also worked with musician Danny Elfman, who has composed scores for all but three of the films Burton has directed. Actress Helena Bonham Carter, Burton's former domestic partner, has appeared in many of his films. He also wrote and illustrated the poetry book The Melancholy Death of Oyster Boy & Other Stories, published in 1997 by Faber and Faber, and a compilation of his drawings, sketches and other artwork, entitled The Art of Tim Burton, was released in 2009. A follow-up to The Art of Tim Burton, entitled The Napkin Art of Tim Burton: Things You Think About in a Bar, containing sketches made by Burton in napkins at bars and restaurants he occasionally visits, was released in 2015. Both compilations were published by Steeles Publishing.</p>
+    	</section>  
+    </article>
+    <footer>
+        <div>&copy; 2017 Tim Burton</div>
+    </footer> <!--footer e-->
+</div>
+</body>
+</html>

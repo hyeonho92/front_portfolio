@@ -1,0 +1,95 @@
+/* Reset CSS  */
+* { margin:0; padding:0; border:0; outline:0; vertical-align:top;
+-webkit-text-size-adjust:none;  }
+body {font-family:Tahoma, Dotum; font-size:14px; color:#333;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display:block; }
+ul, ol, dl { list-style:none; }
+img, video { max-width:100%; border:0; vertical-align:top; }
+a, a:link {color:#333;text-decoration:none; }
+a:visited { color:#333; }
+a:hover, a:active {color:#333;text-decoration:none; }
+table { border-collapse:collapse; border-spacing:0; }
+input, select { vertical-align:middle; }
+label { cursor:pointer; }
+.blind,legend,hr,caption { display:block; overflow:hidden; position:absolute; top:0; left:-1000em; }
+i,em,address { font-style:normal; font-weight:normal; }
+p,li,dd{ line-height:1.5em}
+
+@font-face{
+ font-family:MiltonianTattoo-Regular;
+ src:url('../font/MiltonianTattoo-Regular.eot');
+ src: url('../font/MiltonianTattoo-Regular.woff') format('woff'),
+       url('../font/MiltonianTattoo-Regular.ttf') format('truetype');
+}
+@font-face{
+ font-family:Tahoma;
+ src:url('../font/Tahoma.eot');
+ src: url('../font/Tahoma.woff') format('woff'),
+       url('../font/Tahoma.ttf') format('truetype');
+}
+.tattoo{
+    font-family: MiltonianTattoo-Regular;
+}
+header{
+    width: 100%;
+    background: #000;
+    transition:all 0.5s; animation:scale 1s 1;
+}
+header .header_inner{
+    width: 1400px;
+    height: 80px;
+    margin: 0 auto;
+}
+header .header_inner .logo{
+    float: left;
+    width: 30%;
+}
+header .header_inner .logo h1{
+    font-family: MiltonianTattoo-Regular;
+    font-size: 50px;
+    letter-spacing: -4px;
+    color: #7f1d94;
+    text-align: center;
+    margin-top: 10px;
+}
+header .header_inner .logo h1 a{
+    color: #7f1d94
+}
+header .header_inner nav{
+    float: right;
+    width: 70%;
+    margin-top: 25px;
+}
+header .header_inner ul{
+    width: 100%;
+}
+header .header_inner nav li{
+    float: left;
+    width: 20%;
+    font-size: 30px;
+    color: #fff;
+    
+}
+header .header_inner nav li a{
+    color: #fff;
+}
+header .header_inner .menuOpen{ 
+    position:absolute; 
+    right:20px; 
+    top:20px;
+    display:none;
+}
+
+
+/*footer*/
+footer{
+    width: 100%;
+    background: #666;
+}
+footer div{
+    width: 1400px;
+    height: 30px;
+    text-align: right;
+    color: #000;
+    margin: 0 auto;
+}
